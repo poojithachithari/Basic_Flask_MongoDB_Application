@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Form Page</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        width: 350px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    button{
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 20px;
+    }
+    
+    a {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 20px;
+        text-decoration: none;
+         
+    }
+
+
+    button:hover{
+        background: #45a049;
+    }
+
+    a:hover {
+        text-decoration: none;
+         background: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome!</h1>
+    <p>Please enter your name below:</p>
+
+    <form action="/submit" method="POST">
+        
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Submit</button>
+        <a href="/get_data">View Submissions</a>
+    </form>
+</div>
+
+</body>
+</html>
