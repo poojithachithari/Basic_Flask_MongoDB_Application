@@ -24,7 +24,6 @@ def view():
     for item in data:
         print(item)
         del item['_id']
-    
     data = {
         'data' : data
     }
